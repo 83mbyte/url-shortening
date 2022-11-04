@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import AdvStats from "./components/Sections/AdvStats/AdvStats";
 import Boost from "./components/Sections/Boost/Boost";
 import Footer from "./components/Sections/Footer/Footer";
@@ -11,7 +11,7 @@ import Shorter from "./components/Sections/Shorter/Shorter";
 function App() {
 
   return (
-    <div className="App">
+    <Fragment >
 
       <nav>
         <Section sectionId="headerNav" bg="white">
@@ -32,11 +32,13 @@ function App() {
         <Boost />
 
       </main>
-      <Section bg={"dark"} sectionId="footer">
-        <Footer />
-      </Section>
+      <footer>
+        <Section bg={"dark"} sectionId="footer">
+          <Footer />
+        </Section>
+      </footer>
 
-    </div>
+    </Fragment>
   );
 }
 
