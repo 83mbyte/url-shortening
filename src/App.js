@@ -1,23 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AdvStats from "./components/Sections/AdvStats/AdvStats";
+import Boost from "./components/Sections/Boost/Boost";
+import Footer from "./components/Sections/Footer/Footer";
+import HeaderNav from "./components/Sections/HeaderNav/HeaderNav";
+import Intro from "./components/Sections/Intro/Intro";
+import Section from "./components/Sections/Section";
+import Shorter from "./components/Sections/Shorter/Shorter";
+
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <nav>
+        <Section sectionId="headerNav" bg="white">
+          <HeaderNav />
+        </Section>
+      </nav>
+
+      <main>
+        <Section sectionId="intro">
+          <Intro />
+        </Section>
+
+        <Shorter />
+
+        <Section bg={"gray"} sectionId="advStats">
+          <AdvStats />
+        </Section>
+        <Boost />
+
+      </main>
+      <Section bg={"dark"} sectionId="footer">
+        <Footer />
+      </Section>
+
     </div>
   );
 }

@@ -1,0 +1,36 @@
+.container {
+  display: block;
+  width: 100%;
+}
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0;
+  margin: 0 0 155px 0;
+}
+
+.spacerBrick {
+  width: 92px;
+  height: 8px;
+  display: block;
+  background-color: hsl(180, 66%, 49%);
+  margin: 195px 0 0 0;
+}
+
+@media (max-width: 800px) {
+  .cardsContainer {
+    flex-direction: column;
+  }
+  .spacerBrick {
+    height: 92px;
+    width: 8px;
+  }
+  .cardsContainer {
+    padding: 0 25px;
+    margin: 0 0 50px 0;
+  }
+  .spacerBrick {
+    margin: 0 auto;
+  }
+}

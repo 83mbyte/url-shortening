@@ -1,0 +1,15 @@
+.logoContainer {
+  border: 0px solid red;
+  margin: 0 40px 0 0;
+  font-size: 25px;
+}
+
+.white {
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .logoContainer {
+    margin: 0 0 0 0;
+  }
+}

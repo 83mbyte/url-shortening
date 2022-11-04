@@ -1,0 +1,26 @@
+.containerOutside {
+  width: 100%;
+  padding: 30px 0 20px 0;
+}
+
+.containerInside {
+  max-width: 1105px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.white {
+  background-color: #fff;
+}
+.gray {
+  background-color: rgb(234, 235, 241);
+}
+.dark {
+  background-color: hsl(260, 8%, 14%);
+}
+@media (max-width: 800px) {
+  .containerInside {
+    margin: 0 0px;
+  }
+}

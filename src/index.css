@@ -1,13 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bold {
+  font-weight: 700;
+}
+.white {
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.aButton,
+.aButtonRegister {
+  background-color: hsl(180, 66%, 49%);
+  padding: 10px 25px;
+  border: 1px solid rgba(60, 183, 184, 0.3);
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+.aButtonRegister {
+  padding: 5px 18px;
+}
+.aButton:hover,
+.aButtonRegister:hover {
+  color: #fff;
+  background-color: hsl(180, 66%, 69%);
+  /* opacity: 0.8; */
+}
+h1,
+h2,
+h3 {
+  color: hsl(260, 8%, 14%);
+}
+h1 {
+  font-size: 60px;
+}
+
+p {
+  color: hsl(0, 0%, 75%);
+  font-weight: 500;
+  padding: 0;
+  border: 0px solid green;
+  margin: 0;
+}
+input {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+ion-icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+ion-icon:hover {
+  color: hsl(180, 66%, 49%);
 }

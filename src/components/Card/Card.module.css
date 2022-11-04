@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.container.first {
+  top: 0;
+}
+.container.middle {
+  top: 44px;
+}
+.container.last {
+  top: 88px;
+}
+
+.circleContainer {
+  position: relative;
+  display: block;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: hsl(257, 27%, 26%);
+  margin: 0 0 -44px 32px;
+  z-index: 111;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+.circleContainer.first {
+  background-image: url("../../assets/icon-brand-recognition.svg");
+}
+.circleContainer.middle {
+  background-image: url("../../assets/icon-detailed-records.svg");
+}
+.circleContainer.last {
+  background-image: url("../../assets/icon-fully-customizable.svg");
+}
+
+.cardContainer {
+  background-color: #fff;
+  max-width: 350px;
+  width: 100%;
+  flex: 1;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  z-index: 101;
+  position: relative;
+}
+.cardContainer div {
+  margin: 40px 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardContainer div p {
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .circleContainer {
+    margin: 0 auto -44px auto;
+  }
+  .cardContainer {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cardContainer div {
+    text-align: center;
+  }
+  .container.first,
+  .container.middle,
+  .container.last {
+    top: 0;
+  }
+}

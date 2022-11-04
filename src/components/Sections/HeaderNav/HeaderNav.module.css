@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+
+.logo {
+  margin: 0 40px 0 0;
+  font-size: 25px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  width: 100%;
+  justify-content: space-between;
+}
+
+a {
+  color: hsl(257, 7%, 63%);
+}
+a:hover {
+  color: hsl(257, 27%, 26%);
+}
+
+.navyLinksContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: transparent;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.signContainer {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.burgerMenu {
+  width: 0px;
+  opacity: 0;
+  height: 22px;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.3s, width 0.8s ease;
+}
+.burgerMenuIco {
+  display: block;
+  height: 22px;
+  width: 32px;
+  background: url("../../../assets/icon-menu.svg") no-repeat center;
+}
+
+.menuExpandedContainer {
+  background-color: transparent;
+  width: 0%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0 0;
+  display: block;
+  transition: all 0.4s ease;
+}
+.menuExpandedContent {
+  background-color: hsl(255, 11%, 22%);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  margin: 110px 10px 0 10px;
+  border-radius: 10px;
+  row-gap: 30px;
+  padding: 20px;
+}
+.menuExpandedContent a {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.menuExpandedContent a:hover {
+  color: hsl(180, 66%, 49%);
+}
+.menuHr {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(0, 0%, 75%);
+}
+a.aButtonRegisterDropMenu {
+  background-color: hsl(180, 66%, 49%);
+  padding: 10px 0px;
+  border: 1px solid rgba(60, 183, 184, 0.3);
+  margin: 0 45px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+a.aButtonRegisterDropMenu:hover {
+  color: #fff;
+  background-color: hsl(180, 66%, 69%);
+}
+
+@media (max-width: 800px) {
+  .container {
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  .navigation {
+    display: none;
+  }
+  .burgerMenu {
+    width: 32px;
+    opacity: 1;
+  }
+  .burgerMenu:hover .menuExpandedContainer {
+    display: block;
+    left: 0;
+    width: 100%;
+  }
+}

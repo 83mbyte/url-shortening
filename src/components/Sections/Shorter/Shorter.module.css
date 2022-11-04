@@ -1,0 +1,220 @@
+.container {
+  margin-top: 26px;
+  width: 100%;
+  background: linear-gradient(180deg, #fff 50%, rgb(234, 235, 241) 50%);
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.formContainer {
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("../../../assets/bg-shorten-desktop.svg");
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  height: 165px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px;
+  justify-content: center;
+}
+.formRow {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 65px;
+  margin-top: 15px;
+  padding: 0;
+  column-gap: 20px;
+}
+
+.inputContainer {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px solid hsl(0, 87%, 67%);
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0;
+  overflow: hidden;
+}
+.inputContainer input {
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.inputContainer input:focus {
+  outline: none;
+}
+
+.buttonContainer {
+  width: 185px;
+}
+.buttonContainer input {
+  height: 65px;
+  width: 100%;
+  background-color: hsl(180, 66%, 49%);
+  border: 1px solid rgba(60, 183, 184, 0.3);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+.buttonContainer input:hover {
+  background-color: hsl(180, 66%, 69%);
+}
+
+.alertRow {
+  background-color: transparent;
+  height: 15px;
+  width: 100%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: opacity 0.2s;
+}
+.alertRow p {
+  padding: 2px 0 0 0;
+  margin: 0 0 0 20px;
+  font-size: 12px;
+  color: hsl(0, 87%, 67%);
+  font-style: italic;
+}
+
+.resultsContainer {
+  background-color: rgb(234, 235, 241);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.resultsInner {
+  background-color: transparent;
+  width: 100%;
+  max-width: 1105px;
+  margin: 25px auto 0 auto;
+}
+
+/* -- Results Block styles--- */
+.resultsItemContainer {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.resultsItemWhiteBlock {
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  height: 70px;
+  flex-direction: row;
+  border-radius: 5px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.oldLink {
+  color: hsl(257, 27%, 26%);
+  align-items: center;
+  display: flex;
+  background-color: transparent;
+}
+.newDataContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-items: center;
+}
+.newLink {
+  color: hsl(180, 66%, 49%);
+}
+
+.buttonCopyContainer input {
+  width: 105px;
+  background-color: hsl(180, 66%, 49%);
+  border: 1px solid rgba(60, 183, 184, 0.3);
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.buttonCopyContainer input:hover {
+  background-color: hsl(180, 66%, 69%);
+}
+
+/* ---- */
+
+@media (max-width: 800px) {
+  .formContainer {
+    margin: 0 25px;
+    padding: 0 20px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    height: auto;
+    row-gap: 15px;
+  }
+  .inputContainer {
+    height: 40px;
+    width: auto;
+  }
+  .buttonContainer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .buttonContainer input {
+    width: 100%;
+    height: 40px;
+  }
+
+  .resultsInner {
+    margin: 25px 25px 15px 25px;
+  }
+  /* ResultsBlock styles */
+
+  .resultsItemWhiteBlock {
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  .oldLink {
+    color: hsl(257, 27%, 26%);
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    margin-bottom: 15px;
+  }
+  .newDataContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+  }
+  .buttonCopyContainer {
+    width: 100%;
+  }
+  .buttonCopyContainer input {
+    width: 100%;
+    height: 40px;
+  }
+}
