@@ -126,7 +126,7 @@ const Shorter = () => {
                     <div className={styles.formRow}>
 
                         <div className={styles.inputContainer} ref={inputContainerRef}>
-                            <input type={'url'} ref={inputRef} />
+                            <input type={'url'} ref={inputRef} aria-label={"UrlToModify"} />
                         </div>
 
                         <div className={styles.buttonContainer}>
@@ -134,6 +134,7 @@ const Shorter = () => {
                                 type={'button'}
                                 value={'Shorten It!'}
                                 onClick={clickHandler}
+                                aria-label={"Shorten It!"}
                             />
                         </div>
                     </div>
