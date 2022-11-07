@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/url-shortening/static/css/main.388c4001.css",
-    "main.js": "/url-shortening/static/js/main.e26367ea.js",
+    "main.js": "/url-shortening/static/js/main.1745a63c.js",
     "static/js/787.8eb1d4b1.chunk.js": "/url-shortening/static/js/787.8eb1d4b1.chunk.js",
     "static/media/illustration-working.svg": "/url-shortening/static/media/illustration-working.c9b5ef5452363d8be3df.svg",
     "static/media/icon-fully-customizable.svg": "/url-shortening/static/media/icon-fully-customizable.a1532a74fa781f6fde32.svg",
@@ -13,11 +13,11 @@
     "static/media/bg-shorten-desktop.svg": "/url-shortening/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b.svg",
     "static/media/icon-menu.svg": "/url-shortening/static/media/icon-menu.863803c904916606b7a1.svg",
     "main.388c4001.css.map": "/url-shortening/static/css/main.388c4001.css.map",
-    "main.e26367ea.js.map": "/url-shortening/static/js/main.e26367ea.js.map",
+    "main.1745a63c.js.map": "/url-shortening/static/js/main.1745a63c.js.map",
     "787.8eb1d4b1.chunk.js.map": "/url-shortening/static/js/787.8eb1d4b1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.388c4001.css",
-    "static/js/main.e26367ea.js"
+    "static/js/main.1745a63c.js"
   ]
 }
